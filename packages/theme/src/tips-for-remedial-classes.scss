@@ -1,0 +1,19 @@
+html, body, h4, p {
+  padding: 0;
+  margin: 0;
+}
+.tips-for-remedial-classes {
+  font-family: HYZhengYuan,sans-serif;
+  h4 {
+    font-size: 20px; // ignored
+    padding: 24px 0 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+  p {
+    font-size: 14px;  // ignored
+    text-align: left;
+    padding: 0 32px;
+    line-height: 24px; // ignored
+  }
+}

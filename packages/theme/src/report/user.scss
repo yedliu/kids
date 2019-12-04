@@ -1,0 +1,39 @@
+@import '../mixins/mixins';
+@import '../mixins/utils';
+@include b(report-user) {
+  width: 290px;
+  padding-right: 20px;
+  @include utils-flex();
+  @include e(avatar) {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  @include e(info) {
+    text-align: left;
+    padding-left: 26px;
+  }
+  @include e(name) {
+    font-size: 26px;
+    color:rgba(125,88,45,1);
+    line-height:32px;
+    margin-top: 6px;
+  }
+  @include e(class-info) {
+    color:rgba(196,151,97,1);
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 13px;
+    i {
+      //display: inline-block;
+      font-style: normal;
+      padding: 0 10px;
+    }
+    &>span {
+      @include utils-ellipsis(1);
+      display: inline-block;
+      max-width: 80px;
+      vertical-align: bottom;
+    }
+  }
+}

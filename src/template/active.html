@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,viewport-fit=cover">
+  <meta name="format-detection" content="telephone=yes">
+  <meta name="referrer" content="no-referrer">
+<!--  <link rel="icon" href="<%= BASE_URL %>favicon.ico">-->
+  <style type="text/css">
+    #app {position: relative;top: 50%;transform: translateY(-50%);width: 824px;height: 620px;margin: 0 auto;}
+    .close {position: absolute !important;top: -25px;right: -25px;z-index: 1;width: 50px !important;height: 50px !important;
+      background: url(./active/close.png) no-repeat;
+      background: -webkit-image-set(
+        url(./active/close.png) 1x,
+        url(./active/close@2x.png) 2x,
+        url(./active/close@3x.png) 3x
+      ) no-repeat;
+      background-size: 100% auto;
+      border-radius: 50%;
+    }
+  </style>
+  <title>活动</title>
+</head>
+<body>
+<div id="app">
+  <button
+    class="close pad-active__button"
+    onclick="handlerBackClick()"
+    playAudio
+  ></button>
+  <div id="active"></div>
+</div>
+<script src='<%= VUE_APP_VUE %>'></script>
+<script src='https://statics-lib.zmlearn.com/axios/0.18.0/axios.min.js'></script>
+<script>
+  window.GLOBAL = {};
+  console.log(window.GLOBAL.vbus);
+  function setupWebViewJavascriptBridge(callback) {
+    if (window.WebViewJavascriptBridge) { return callback(window.WebViewJavascriptBridge); }
+    // 和iOS通信的方法
+    if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+    window.WVJBCallbacks = [callback];
+    const WVJBI_FRAME = document.createElement('iframe');
+    WVJBI_FRAME.style.display = 'none';
+    WVJBI_FRAME.src = 'https://__bridge_loaded__';
+    document.documentElement.appendChild(WVJBI_FRAME);
+    setTimeout(() => {
+      document.documentElement.removeChild(WVJBI_FRAME);
+    }, 0);
+    // 和Android通信的方法
+    if (window.WebViewJavascriptBridge) {
+      return callback(window.WebViewJavascriptBridge);
+    } else {
+      document.addEventListener( 'WebViewJavascriptBridgeReady' , () => {
+        callback(window.WebViewJavascriptBridge);
+      }, false );
+    }
+  }
+
+  function callhandler(name, data, callback) {
+    setupWebViewJavascriptBridge((bridge) => {
+      bridge.callHandler(name, data, callback);
+    });
+  }
+  function registerHander(name, callback) {
+    setupWebViewJavascriptBridge((bridge) => {
+      bridge.registerHandler(name, (data, responseCallback) => {
+        callback(data, responseCallback);
+      });
+    });
+  }
+  function isMobile() {
+    return /Android|webOS|iPhone|iPad/i.test(navigator.userAgent);
+  }
+  function close() {
+    console.log('exit');
+    if (isMobile()) {
+      callhandler('exit');
+    } else {
+      const target = window.parent && window.parent.window;
+      target.postMessage({
+        action: 'back'
+      }, '*');
+    }
+  }
+
+  function handlerBackClick() {
+    close();
+  }
+</script>
+</body>
+</html>

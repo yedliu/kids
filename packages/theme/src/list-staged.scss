@@ -1,0 +1,33 @@
+@import "mixins/mixins";
+@import "mixins/utils";
+@include b(list-staged) {
+  text-align: left;
+  @include e(wrapper) {
+    @include utils-flex($justify: space-between, $align: center);
+  }
+  @include e(container) {
+    flex: 1;
+  }
+  @include e(prepend) {
+    margin-right: 7px;
+  }
+  @include e(content) {
+    font-size: 18px;
+    color: #333;
+    line-height: 25px;
+    padding: 4px 100px 0 0;
+    @include utils-ellipsis();
+  }
+  @include e(footer) {
+    font-size: 14px;
+    line-height: 19px;
+    color: #666;
+    margin-top: 6px;
+  }
+  @include e(prepend) {
+
+  }
+  @include e(append) {
+
+  }
+}

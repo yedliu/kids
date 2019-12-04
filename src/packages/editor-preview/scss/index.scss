@@ -1,0 +1,10 @@
+@import "../../../scss/common/reset.scss";
+@import "../../../scss/mixins/mixins.scss";
+@import "./header";
+@import "./container";
+@import "./player";
+@import "./user-list--top";
+@import "./user-list--aside";
+@include b(editor) {
+  height: 100%;
+}

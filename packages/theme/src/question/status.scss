@@ -1,0 +1,26 @@
+@import '../mixins/mixins';
+
+@include b(question-status) {
+  @include flex(center, center);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #F4F4F4;
+  color: #999;
+  font-size: 22px;
+  cursor: pointer;
+  @include m(done) {
+    background: #6086FF;
+    color: $--color-white;
+  }
+  @include m(correct) {
+    color: #69B618;
+    background: #E7FFF2 url(../assets/answer-sheet/icon-correct@2x.png) no-repeat center bottom;
+    background-size: 60% auto;
+  }
+  @include m(incorrect) {
+    color: #EF4C4F;
+    background: #FFE7E7 url(../assets/answer-sheet/icon-incorrect@2x.png) no-repeat center bottom;
+    background-size: 60% auto;
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../../scss/mixins/mixins";
+@import "../../../scss/mixins/utils";
+@include b(editor-header) {
+  @include utils-flex(space-between, center);
+  height:33px;
+  background:rgba(0,0,0,0.6);
+  color: white;
+  padding: 0 20px;
+  font-size: 16px;
+  @include when(fixed) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  @media screen and ($--ipad) {   // 设备宽高比小于6/4 用于pad
+    height: 42px;
+  }
+  @include e(left) {
+    width: 20%;
+  }
+  @include e(right) {
+    width: 20%;
+    text-align: right;
+  }
+  @include e(center) {
+    flex: 1;
+    text-align: center;
+  }
+}

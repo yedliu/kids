@@ -1,0 +1,312 @@
+.homework-reorder-img {
+  overflow-y: auto;
+  height: 100%;
+  @include scrollHide;
+  * {
+    @include disableUserSelect();
+  }
+  .title-img {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  .question {
+    @include flex(space-between);
+    flex-direction: column;
+    align-items: flex-start;
+    .before-order-area {
+      @include disableUserSelect();
+      @include flex(space-around);
+      flex-direction: row;
+      position: relative;
+      width: 96%;
+      height: 170px;
+      background-color: #E9F5FF;
+      border-radius: 7px;
+      margin-top: 26px;
+      margin-bottom: 10px;
+      margin-left: 2%;
+      .items-row {
+        @include flex(space-around);
+        flex-direction: row;
+        width: 94%;
+        align-items: flex-start;
+        background: url("../images/homework/typeSelect/img_fenlei_bookshelf@2x.png") no-repeat center 90%;
+        background-size: 100% 30%;
+        height: 155px;
+        padding: 20px;
+        position: relative;
+        @include disableUserSelect();
+        .item-box {
+          float: left;
+          position: relative;
+          @include disableUserSelect();
+          .reorder-img-option {
+            @include disableUserSelect();
+            position: relative;
+            color: #617686;
+            background-color: white;
+            width: 94px;
+            height: 94px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            img {
+              @include disableUserSelect();
+              width: 90%;
+              max-height: 90%;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    .reorder-area {
+      @include flex(space-around);
+      flex-direction: row;
+      position: relative;
+      width: 100%;
+      height: 230px;
+      align-items: flex-start;
+      .dropping {
+        transform: scale(1.1);
+        z-index: 5;
+        transform-origin: bottom center;
+        .carriage__window {
+          border: #FFE174 6px solid;
+        }
+      }
+      .item-box {
+        width: 160px;
+        height: 210px;
+        //margin: 24px;
+        position: relative;
+        .item-drop-main {
+          position: relative;
+          height: 100%;
+        }
+        .item-box-index {
+          position: absolute;
+          top: - 15px;
+          left: 50%;
+          margin-left: -15px;
+          border-radius: 15px;
+          background-color: #FFE174;
+          text-align: center;
+          line-height: 30px;
+          width: 30px;
+          font-size: 20px;
+          z-index: 2;
+          color: #333;
+        }
+        &.has-dropped {
+          border: 4px #84ACFF solid;
+        }
+      }
+      .bg-rail {
+        @include flex(space-between);
+        flex-direction: column;
+        position: absolute;
+        height: 44px;
+        left: -10px;
+        right: -10px;
+        bottom: 0;
+        background: linear-gradient(135deg, #fff 25%, #D37C51 0, #D37C51 40%, #fff 0, #fff 75%, #D37C51 0) repeat-x;
+        background-size: 45px 100%;
+        //background-position: 100px 0;
+        .rail-hr {
+          height: 14px;
+          width: 100%;
+          border-top: #D37C51 7px solid;
+          border-bottom: #BA6A44 7px solid;
+        }
+      }
+      .carriage__line {
+        position: absolute;
+        min-width: 200px;
+        max-width: 800px;
+        top: 162px;
+        height: 10px;
+        background-color: #546582;
+      }
+    }
+  }
+  .carriage {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    &.wrong {
+      .carriage__window {
+        border: #FF6969 6px solid;
+      }
+      .item-box-index {
+        background-color: #FF6969 !important;
+        color: #fff !important;
+      }
+      .result-icon {
+        background: url("../images/homework/report/icon_report_wrong_middle@2x.png") no-repeat center;
+        background-size: contain;
+      }
+    }
+    &.right {
+      .carriage__window {
+        border: #7EC92F 6px solid;
+      }
+      .item-box-index {
+        background-color: #7EC92F !important;
+        color: #fff !important;
+      }
+      .result-icon {
+        background: url("../images/homework/report/icon_report_right_middle@2x.png") no-repeat center;
+        background-size: contain;
+      }
+    }
+    .carriage__cap {
+      position: absolute;
+      width: 44px;
+      height: 12px;
+      left: 50%;
+      margin-left: -22px;
+      border-radius: 100px 100px 0 0;
+      background-color: #A7CFFA;
+      &:before {
+        content: "";
+        position: absolute;
+        right: 5px;
+        bottom: 0;
+        background-color: #85B9F0;
+        border-radius: 11px  11px  0px  0px;
+        height: 6px;
+        width: 15px;
+      }
+    }
+    .carriage__main {
+      position: absolute;
+      width: 138px;
+      height: 137px;
+      top: 12px;
+      left: 50%;
+      margin-left: -69px;
+      background-color: #D1E7FF;
+      border-radius: 43px  43px  0px  0px;
+      &:after {
+        position: absolute;
+        content: "";
+        left: -11px;
+        height: 10px;
+        width: 160px;
+        background-color: #A7CFFA;
+        border-radius: 6px;
+        bottom: 0;
+      }
+    }
+    .carriage__bottom {
+      @include flex(center);
+      position: absolute;
+      height: 49px;
+      width: 144px;
+      left: 50%;
+      margin-left: -72px;
+      top: 149px;
+      background-color: #70A9E6;
+      &:after {
+        position: absolute;
+        content: "";
+        left: -4px;
+        height: 10px;
+        width: 152px;
+        background-color: #7688A8;
+        border-radius: 6px;
+        bottom: 0;
+      }
+      .result-icon {
+        width: 30px;
+        height: 30px;
+        margin-top: -10px;
+      }
+    }
+    .carriage__wheel {
+      position: absolute;
+      height: 28px;
+      bottom: 0;
+      width: 100%;
+      &:before {
+        position: absolute;
+        content: "";
+        left: 18px;
+        bottom: 0;
+        height: 20px;
+        width: 20px;
+        border-radius: 14px;
+        background: #6E321E url("../images/homework/reorder/img_wheel_star@2x.png") no-repeat center;
+        background-size: 13px 14px;
+        border: 4px #552312 solid;
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        right: 18px;
+        bottom: 0;
+        height: 20px;
+        width: 20px;
+        border-radius: 14px;
+        background: #6E321E url("../images/homework/reorder/img_wheel_star@2x.png") no-repeat center;
+        background-size: 13px 14px;
+        border: 4px #552312 solid;
+      }
+    }
+    .carriage__window {
+      position: absolute;
+      width: 106px;
+      height: 106px;
+      border: #84ACFF 6px solid;
+      border-radius: 8px;
+      background-color: #fff;
+      left: 50%;
+      margin-left: -53px;
+      top: 16px;
+      .reorder-img-option {
+        img {
+          width: 95%;
+          max-height: 95%;
+          margin-right: 0;
+          @include disableUserSelect();
+        }
+      }
+    }
+  }
+}
+.reorder-img-option {
+  @include disableUserSelect();
+  position: relative;
+  background-color: white;
+  width: 94px;
+  height: 94px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  .item-mengban {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+  }
+  img {
+    @include disableUserSelect();
+    width: 90%;
+    max-height: 90%;
+    margin-right: 0;
+  }
+  &.moving-clone-source {
+    @include disableUserSelect();
+    transform: scale(1.3);
+    overflow: hidden;
+    img {
+      @include disableUserSelect();
+    }
+  }
+}

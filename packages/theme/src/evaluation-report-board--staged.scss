@@ -1,0 +1,21 @@
+@import "mixins/mixins";
+@import "mixins/utils";
+
+@include b(evaluation-report-board) {
+  @include e(header) {
+    position: relative;
+    width: 454px;
+    height: 66px;
+    background: url(../assets/evaluation-report--staged/img_yellow_silkribbon@2x.png) no-repeat 100%/100%;
+    margin: 0 auto -42px;
+    color: $--color-white;
+    font-size: 36px;
+    text-align: center;
+    line-height: 58px;
+  }
+  @include e(content) {
+    background: $--color-white;
+    padding: 30px;
+    border-radius: 20px;
+  }
+}

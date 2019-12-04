@@ -1,0 +1,47 @@
+.answer-result {
+  width: 92%;
+  margin-left: 4%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  .title {
+    background: url("../images/homework/report/icon_report_result@2x.png") no-repeat;
+    background-size: contain;
+    line-height: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 30px;
+    margin-bottom: 20px;
+  }
+  .main {
+    background: #F4F5F7;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    .score {
+      font-size: 17px;
+      font-weight: 500;
+      float: right;
+      span {
+        font-weight: bold;
+      }
+    }
+    .result-compare{
+      padding: 20px 0 0;
+      span{
+        margin-right: 56px;
+        font-family: PingFangSC-Regular;
+        font-size: 17px;
+        color: #666666;
+        letter-spacing: 0;
+      }
+      i{
+        font-family: PingFangSC-Semibold;
+        font-size: 17px;
+        color: #151515;
+        letter-spacing: 0;
+        line-height: 24px;
+      }
+    }
+  }
+}

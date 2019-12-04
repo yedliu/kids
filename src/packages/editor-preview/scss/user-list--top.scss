@@ -1,0 +1,95 @@
+@import "../../../scss/common/reset.scss";
+@import "../../../scss/mixins/mixins.scss";
+@import "../../../scss/mixins/utils.scss";
+@include b(editor-user) {
+  @include m(top) {
+    display: none;
+    @media screen and ($--ipad) {   // 设备宽高比大于6/4
+      //display: block;
+      @include utils-flex();
+      width: 980px;
+      height: 178px;
+      //background-color: yellowgreen;
+      margin: 16px auto 0;
+      @include e(wrapper) {
+        margin-right: 6px;
+        @include when(teacher) {
+          padding: 0 10px;
+          //width: 252px;
+          height: 178px;
+          background: url(../images/board_teacher_left.png) no-repeat left,
+          url(../images/board_teacher_right.png) no-repeat right;
+          background: -webkit-image-set(
+              url(../images/board_teacher_left.png) 1x,
+              url(../images/board_teacher_left@2x.png) 2x,
+              url(../images/board_teacher_left@3x.png) 3x
+          ) no-repeat left,
+          -webkit-image-set(
+              url(../images/board_teacher_right.png) 1x,
+              url(../images/board_teacher_right@2x.png) 2x,
+              url(../images/board_teacher_right@3x.png) 3x
+          ) no-repeat right;
+        }
+        @include when(mine) {
+          width: 198px !important;
+        }
+        @include when(student) {
+          padding: 0 10px;
+          width: 166px;
+          height: 178px;
+          background: url(../images/board_student_left.png) no-repeat left,
+          url(../images/board_student_right.png) no-repeat right;
+          background: -webkit-image-set(
+              url(../images/board_student_left.png) 1x,
+              url(../images/board_student_left@2x.png) 2x,
+              url(../images/board_student_left@3x.png) 3x
+          ) no-repeat left,
+          -webkit-image-set(
+              url(../images/board_student_right.png) 1x,
+              url(../images/board_student_right@2x.png) 2x,
+              url(../images/board_student_right@3x.png) 3x
+          ) no-repeat right;
+        }
+
+      }
+      @include e(content) {
+        //width: 100%;
+        min-height: 178px;
+        border-radius:14px;
+        border:5px solid rgba(255,187,112,1);
+        background: rgba(236, 154, 91, 1);
+        padding: 4px 2px;
+        font-size: 0;
+        img {
+          border-radius: 10px;
+          max-width: 100%;
+        }
+        @include e(avatar-wrapper) {
+          @include utils-flex(center, center);
+          height: 130px;
+          background: rgba(48, 80, 180, 1);
+          border-radius: 10px 10px 0 0;
+          img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+          }
+        }
+        @include e(info) {
+          @include utils-flex(space-between, center);
+          height: 32px;
+          background: rgba(82, 119, 235, 1);
+          border-radius: 0 0 10px 10px;
+          font-size: 14px;
+          color: white;
+          p {
+            @include utils-flex($align: center);
+            padding: 0 8px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}

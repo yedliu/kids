@@ -1,0 +1,22 @@
+@import "../mixins/mixins";
+@import "../mixins/utils";
+
+@include b(report-base) {
+  padding: 11px 20px;
+  font-size: 16px;
+  background: rgba(255, 244, 200, 1);
+  width:278px;
+  height:90px;
+  border-radius:10px;
+  text-align: left;
+  @include e(header) {
+    line-height: 18px;
+    color: rgba(196,151,97,1);
+  }
+  @include e(content) {
+    @include utils-ellipsis(2);
+    line-height: 22px;
+    color: rgba(125,88,45,1);
+    margin-top: 6px;
+  }
+}

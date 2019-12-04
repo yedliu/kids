@@ -1,0 +1,785 @@
+{
+  "data": {
+    "id": 666666994,
+    "name": "相邻数--基础",
+    "type": 1,
+    "diff": 1,
+    "totalScore": "21",
+    "lessonId": 7783756,
+    "expiryDate": 1548653400000,
+    "stuUserId": 1325972943,
+    "state": 3,
+    "grade": "幼儿园大班",
+    "subject": "数理逻辑训练",
+    "questionAmount": "7",
+    "questionAmountNoSub": 8,
+    "answeredAmount": 0,
+    "rightAmount": "0",
+    "wrongAmount": "0",
+    "partRightAmount": "0",
+    "waitCorrectAmount": 6,
+    "homeworkLessonQuestionDTOList": [
+      {
+        "id": 111231896,
+        "hlId": 666666994,
+        "questionId": "361556",
+        "score": 3,
+        "correctResult": 0,
+        "stuGetScore": 0,
+        "questionSource": 2,
+        "questionOutputDTO": {
+          "id": 361556,
+          "title": "<p>未<br/></p>",
+          "optionList": [
+            "<p>1<br/></p>",
+            "<p>3<br/></p>",
+            "<p>4<br/></p>",
+            "<p>5<br/></p>"
+          ],
+          "analysis": "",
+          "subjectId": 11,
+          "gradeId": 1,
+          "typeId": 2,
+          "questionType": "多选题",
+          "provinceId": 3,
+          "year": 2018,
+          "score": 3,
+          "sourceId": 2,
+          "difficulty": 1,
+          "distinction": 2,
+          "rating": 1,
+          "comprehensiveDegreeId": 1,
+          "knowledgeIdList": [
+            115820
+          ],
+          "examPointIdList": [],
+          "browseCount": 0,
+          "quoteCount": 11,
+          "examCount": 0,
+          "sub": false,
+          "createdTime": 1539953820000,
+          "createdUser": 1325976459,
+          "updatedTime": 1539953820000,
+          "updatedUser": 1325976459,
+          "errType": 0,
+          "templateType": 2,
+          "knowledgeNameList": [
+            "分组加减抵消"
+          ],
+          "layoutStyle": 3,
+          "label": "2018年北京省",
+          "parentTypeId": 38,
+          "parentTypeName": "选择题"
+        }
+      },
+      {
+        "id": 111231897,
+        "hlId": 666666994,
+        "questionId": "359452",
+        "score": 3,
+        "correctResult": 0,
+        "stuGetScore": 0,
+        "questionSource": 2,
+        "questionOutputDTO": {
+          "id": 359452,
+          "title": "<p>计算-三级难度-三级知识点‘分数化小数求近似值’题目04-单选题<br/></p>",
+          "optionList": [
+            "<p>发生过<br/></p>",
+            "<p>三大发个<br/></p>",
+            "<p>是对方感受<br/></p>",
+            "<p>是非得失<br/></p>"
+          ],
+          "analysis": "",
+          "subjectId": 11,
+          "gradeId": 1,
+          "typeId": 2,
+          "questionType": "多选题",
+          "score": 3,
+          "sourceId": 2,
+          "difficulty": 3,
+          "distinction": 2,
+          "rating": 2,
+          "comprehensiveDegreeId": 2,
+          "knowledgeIdList": [
+            115863
+          ],
+          "examPointIdList": [],
+          "browseCount": 0,
+          "quoteCount": 44,
+          "examCount": 0,
+          "sub": false,
+          "createdTime": 1527577082000,
+          "createdUser": 180,
+          "updatedTime": 1527577082000,
+          "updatedUser": 180,
+          "errType": 0,
+          "templateType": 2,
+          "knowledgeNameList": [
+            "分数化小数求近似值"
+          ],
+          "layoutStyle": 3,
+          "parentTypeId": 38,
+          "parentTypeName": "选择题"
+        }
+      },
+      {
+        "id": 32379,
+        "hlId": 4709,
+        "questionId": "361053",
+        "score": 15,
+        "stuAnswer": "{\"top\":[{\"id\":740,\"subQuestionId\":644794,\"content\":\"香蕉\",\"type\":\"text\",\"showOrder\":0,\"pos\":\"top\",\"x\":80,\"y\":163,\"active\":true,\"curLinePos\":0},{\"id\":742,\"subQuestionId\":644795,\"content\":\"apple\",\"type\":\"text\",\"showOrder\":1,\"pos\":\"top\",\"x\":240,\"y\":163,\"active\":true,\"curLinePos\":1},{\"id\":744,\"subQuestionId\":644796,\"content\":\"葡萄\",\"type\":\"text\",\"showOrder\":2,\"pos\":\"top\",\"x\":400,\"y\":163,\"active\":true,\"curLinePos\":2},{\"id\":746,\"subQuestionId\":644797,\"content\":\"芒果\",\"type\":\"text\",\"showOrder\":3,\"pos\":\"top\",\"x\":560,\"y\":163,\"active\":true,\"curLinePos\":3},{\"id\":748,\"subQuestionId\":644798,\"content\":\"西瓜\",\"type\":\"text\",\"showOrder\":4,\"pos\":\"top\",\"x\":720,\"y\":163,\"active\":true,\"curLinePos\":4}],\"bottom\":[{\"id\":749,\"subQuestionId\":644798,\"content\":\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20180829145711_5549.jpg\",\"type\":\"img\",\"showOrder\":0,\"pos\":\"bottom\",\"x\":80,\"y\":283,\"active\":true,\"curLinePos\":4},{\"id\":743,\"subQuestionId\":644795,\"content\":\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20180829145600_2999.jpg\",\"type\":\"img\",\"showOrder\":1,\"pos\":\"bottom\",\"x\":240,\"y\":283,\"active\":true,\"curLinePos\":0},{\"id\":745,\"subQuestionId\":644796,\"content\":\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20180829145657_7586.jpg\",\"type\":\"img\",\"showOrder\":2,\"pos\":\"bottom\",\"x\":400,\"y\":283,\"active\":true,\"curLinePos\":1},{\"id\":741,\"subQuestionId\":644794,\"content\":\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20180829145537_4761.jpg\",\"type\":\"img\",\"showOrder\":3,\"pos\":\"bottom\",\"x\":560,\"y\":283,\"active\":true,\"curLinePos\":2},{\"id\":747,\"subQuestionId\":644797,\"content\":\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20180829145719_8325.jpg\",\"type\":\"img\",\"showOrder\":4,\"pos\":\"bottom\",\"x\":720,\"y\":283,\"active\":true,\"curLinePos\":3}],\"matchList\":[[{\"id\":740,\"subQuestionId\":644794,\"content\":\"香蕉\",\"type\":\"text\",\"showOrder\":0,\"pos\":\"top\",\"x\":80,\"y\":163,\"active\":true,\"curLinePos\":0},{\"id\":743,\"subQuestionId\":644795,\"content\":\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20180829145600_2999.jpg\",\"type\":\"img\",\"showOrder\":1,\"pos\":\"bottom\",\"x\":240,\"y\":283,\"active\":true,\"curLinePos\":0}],[{\"id\":742,\"subQuestionId\":644795,\"content\":\"apple\",\"type\":\"text\",\"showOrder\":1,\"pos\":\"top\",\"x\":240,\"y\":163,\"active\":true,\"curLinePos\":1},{\"id\":745,\"subQuestionId\":644796,\"content\":\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20180829145657_7586.jpg\",\"type\":\"img\",\"showOrder\":2,\"pos\":\"bottom\",\"x\":400,\"y\":283,\"active\":true,\"curLinePos\":1}],[{\"id\":744,\"subQuestionId\":644796,\"content\":\"葡萄\",\"type\":\"text\",\"showOrder\":2,\"pos\":\"top\",\"x\":400,\"y\":163,\"active\":true,\"curLinePos\":2},{\"id\":741,\"subQuestionId\":644794,\"content\":\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20180829145537_4761.jpg\",\"type\":\"img\",\"showOrder\":3,\"pos\":\"bottom\",\"x\":560,\"y\":283,\"active\":true,\"curLinePos\":2}],[{\"id\":746,\"subQuestionId\":644797,\"content\":\"芒果\",\"type\":\"text\",\"showOrder\":3,\"pos\":\"top\",\"x\":560,\"y\":163,\"active\":true,\"curLinePos\":3},{\"id\":747,\"subQuestionId\":644797,\"content\":\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20180829145719_8325.jpg\",\"type\":\"img\",\"showOrder\":4,\"pos\":\"bottom\",\"x\":720,\"y\":283,\"active\":true,\"curLinePos\":3}],[{\"id\":748,\"subQuestionId\":644798,\"content\":\"西瓜\",\"type\":\"text\",\"showOrder\":4,\"pos\":\"top\",\"x\":720,\"y\":163,\"active\":true,\"curLinePos\":4},{\"id\":749,\"subQuestionId\":644798,\"content\":\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20180829145711_5549.jpg\",\"type\":\"img\",\"showOrder\":0,\"pos\":\"bottom\",\"x\":80,\"y\":283,\"active\":true,\"curLinePos\":4}]]}",
+        "correctResult": 3,
+        "stuGetScore": 6,
+        "questionEsDto": null,
+        "questionSource": 2,
+        "questionOutputDTO": {
+          "id": 361053,
+          "title": "<p>图文配对，连连看<br/></p>",
+          "content": null,
+          "optionList": null,
+          "answerList": [
+            "[740,741]",
+            "[742,743]",
+            "[744,745]",
+            "[746,747]",
+            "[748,749]"
+          ],
+          "analysis": null,
+          "subjectId": 1,
+          "gradeId": 1,
+          "termId": null,
+          "typeId": 37,
+          "questionType": "配对题",
+          "provinceId": null,
+          "cityId": null,
+          "countyId": null,
+          "schoolId": null,
+          "year": 2018,
+          "score": 2,
+          "sourceId": 5,
+          "difficulty": 3,
+          "distinction": 2,
+          "recommendationIndex": null,
+          "rating": 5,
+          "comprehensiveDegreeId": 1,
+          "abilityIdList": null,
+          "subjectCharacteristicIdList": null,
+          "editionIdList": null,
+          "chapterIdList": null,
+          "knowledgeIdList": [
+            119101
+          ],
+          "examPointIdList": [],
+          "keywordList": null,
+          "coreLiteracyIdList": null,
+          "courseSystemIdList": null,
+          "costTime": null,
+          "browseCount": 0,
+          "quoteCount": 15,
+          "examCount": 0,
+          "correctRate": null,
+          "storageTime": null,
+          "sub": true,
+          "state": null,
+          "createdTime": null,
+          "createdUser": null,
+          "updatedTime": null,
+          "updatedUser": null,
+          "versions": null,
+          "remarks": null,
+          "picUrl": null,
+          "errType": 0,
+          "errReason": null,
+          "templateType": 6,
+          "children": [
+            {
+              "id": 644794,
+              "questionId": 361053,
+              "title": "",
+              "optionList": null,
+              "answerList": [],
+              "analysis": null,
+              "typeId": 37,
+              "score": 0,
+              "difficulty": null,
+              "knowledgeIdList": null,
+              "examPointIdList": null,
+              "subQuestionMemberList": [
+                {
+                  "id": 740,
+                  "subQuestionId": 644794,
+                  "content": "香蕉",
+                  "type": "text",
+                  "showOrder": 0
+                },
+                {
+                  "id": 741,
+                  "subQuestionId": 644794,
+                  "content": "https://question-image.zmlearn.com/qb_test/20180829145537_4761.jpg",
+                  "type": "img",
+                  "showOrder": 3
+                }
+              ],
+              "subStuAnsId": null,
+              "stuAnswer": null,
+              "correctResult": null,
+              "stuGetScore": null
+            },
+            {
+              "id": 644795,
+              "questionId": 361053,
+              "title": "",
+              "optionList": null,
+              "answerList": [],
+              "analysis": null,
+              "typeId": 37,
+              "score": 0,
+              "difficulty": null,
+              "knowledgeIdList": null,
+              "examPointIdList": null,
+              "subQuestionMemberList": [
+                {
+                  "id": 742,
+                  "subQuestionId": 644795,
+                  "content": "apple",
+                  "type": "text",
+                  "showOrder": 1
+                },
+                {
+                  "id": 743,
+                  "subQuestionId": 644795,
+                  "content": "https://question-image.zmlearn.com/qb_test/20180829145600_2999.jpg",
+                  "type": "img",
+                  "showOrder": 1
+                }
+              ],
+              "subStuAnsId": null,
+              "stuAnswer": null,
+              "correctResult": null,
+              "stuGetScore": null
+            },
+            {
+              "id": 644796,
+              "questionId": 361053,
+              "title": "",
+              "optionList": null,
+              "answerList": [],
+              "analysis": null,
+              "typeId": 37,
+              "score": 0,
+              "difficulty": null,
+              "knowledgeIdList": null,
+              "examPointIdList": null,
+              "subQuestionMemberList": [
+                {
+                  "id": 744,
+                  "subQuestionId": 644796,
+                  "content": "葡萄",
+                  "type": "text",
+                  "showOrder": 2
+                },
+                {
+                  "id": 745,
+                  "subQuestionId": 644796,
+                  "content": "https://question-image.zmlearn.com/qb_test/20180829145657_7586.jpg",
+                  "type": "img",
+                  "showOrder": 2
+                }
+              ],
+              "subStuAnsId": null,
+              "stuAnswer": null,
+              "correctResult": null,
+              "stuGetScore": null
+            },
+            {
+              "id": 644797,
+              "questionId": 361053,
+              "title": "",
+              "optionList": null,
+              "answerList": [],
+              "analysis": null,
+              "typeId": 37,
+              "score": 0,
+              "difficulty": null,
+              "knowledgeIdList": null,
+              "examPointIdList": null,
+              "subQuestionMemberList": [
+                {
+                  "id": 746,
+                  "subQuestionId": 644797,
+                  "content": "芒果",
+                  "type": "text",
+                  "showOrder": 3
+                },
+                {
+                  "id": 747,
+                  "subQuestionId": 644797,
+                  "content": "https://question-image.zmlearn.com/qb_test/20180829145719_8325.jpg",
+                  "type": "img",
+                  "showOrder": 4
+                }
+              ],
+              "subStuAnsId": null,
+              "stuAnswer": null,
+              "correctResult": null,
+              "stuGetScore": null
+            },
+            {
+              "id": 644798,
+              "questionId": 361053,
+              "title": "",
+              "optionList": null,
+              "answerList": [],
+              "analysis": null,
+              "typeId": 37,
+              "score": 0,
+              "difficulty": null,
+              "knowledgeIdList": null,
+              "examPointIdList": null,
+              "subQuestionMemberList": [
+                {
+                  "id": 748,
+                  "subQuestionId": 644798,
+                  "content": "西瓜",
+                  "type": "text",
+                  "showOrder": 4
+                },
+                {
+                  "id": 749,
+                  "subQuestionId": 644798,
+                  "content": "https://question-image.zmlearn.com/qb_test/20180829145711_5549.jpg",
+                  "type": "img",
+                  "showOrder": 0
+                }
+              ],
+              "subStuAnsId": null,
+              "stuAnswer": null,
+              "correctResult": null,
+              "stuGetScore": null
+            }
+          ],
+          "knowledgeNameList": [
+            null
+          ],
+          "layoutStyle": 2,
+          "x1": null,
+          "y1": null,
+          "x2": null,
+          "y2": null,
+          "picIndex": null,
+          "label": "2018年",
+          "parentTypeId": 41,
+          "parentTypeName": "判断匹配题",
+          "stuAnsId": null,
+          "stuAns": null,
+          "correctResult": null,
+          "stuGetScore": null
+        }
+      },
+      {
+        "id": 32673,
+        "hlId": 4709,
+        "questionId": "361234",
+        "score": 1,
+        "stuAnswer": "[\"风格打法\",\"蓄势待发\",\"绕弯儿\"]",
+        "correctResult": 2,
+        "stuGetScore": 0,
+        "questionEsDto": null,
+        "questionSource": 2,
+        "questionOutputDTO": {
+          "id": 361234,
+          "title": "<p>暗暗说道<br/></p>",
+          "content": "<p>所说的<zmfill answerstring=\"史蒂芬孙\"></zmfill>现场vxcv圣达菲<zmfill answerstring=\"身上所\"></zmfill>sdfsdfsdf的<zmfill answerstring=\"风格打法\"></zmfill></p>",
+          "optionList": [
+            "身上所",
+            "风格打法",
+            "史蒂芬孙",
+            "蓄势待发",
+            "绕弯儿"
+          ],
+          "answerList": [
+            "史蒂芬孙",
+            "身上所",
+            "风格打法"
+          ],
+          "analysis": null,
+          "subjectId": 1,
+          "gradeId": 1,
+          "termId": null,
+          "typeId": 35,
+          "questionType": "选词填空",
+          "provinceId": null,
+          "cityId": null,
+          "countyId": null,
+          "schoolId": null,
+          "year": 2018,
+          "score": 1,
+          "sourceId": 19,
+          "difficulty": 1,
+          "distinction": 2,
+          "recommendationIndex": null,
+          "rating": 1,
+          "comprehensiveDegreeId": 1,
+          "abilityIdList": [
+            0,
+            4
+          ],
+          "subjectCharacteristicIdList": null,
+          "editionIdList": null,
+          "chapterIdList": null,
+          "knowledgeIdList": [
+            119101
+          ],
+          "examPointIdList": [
+            15005
+          ],
+          "keywordList": null,
+          "coreLiteracyIdList": null,
+          "courseSystemIdList": null,
+          "costTime": null,
+          "browseCount": 0,
+          "quoteCount": 7,
+          "examCount": 0,
+          "correctRate": null,
+          "storageTime": null,
+          "sub": false,
+          "state": null,
+          "createdTime": 1537264498000,
+          "createdUser": 1325976459,
+          "updatedTime": 1537264498000,
+          "updatedUser": 1325976459,
+          "versions": null,
+          "remarks": null,
+          "picUrl": null,
+          "errType": 0,
+          "errReason": null,
+          "templateType": 7,
+          "children": null,
+          "knowledgeNameList": [
+            null
+          ],
+          "layoutStyle": 3,
+          "x1": null,
+          "y1": null,
+          "x2": null,
+          "y2": null,
+          "picIndex": null,
+          "label": "2018年",
+          "parentTypeId": 39,
+          "parentTypeName": "填空题",
+          "stuAnsId": null,
+          "stuAns": null,
+          "correctResult": null,
+          "stuGetScore": null
+        }
+      },
+      {
+        "id": 111231898,
+        "hlId": 666666994,
+        "questionId": "63584",
+        "score": 3,
+        "correctResult": 0,
+        "stuGetScore": 0,
+        "questionSource": 2,
+        "questionOutputDTO": {
+          "id": 63584,
+          "title": "<p>老师在黑板上将从<zmlatex>1</zmlatex>开始的计数连续地写下去：<zmlatex>1,3,5,7,9,11\\cdots\\cdots</zmlatex>写好后，擦去了其中的两个数，将这些奇数隔成了<zmlatex>3</zmlatex><img src=\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20181213110247_3009.jpg\" zmtype=\"big\"/>段，如果前两段的和分别是<zmlatex>961</zmlatex>和<zmlatex>1001</zmlatex>，那么，老师擦去的两个奇数之和是（<zmblank></zmblank>）。</p>",
+          "optionList": [
+            "<p><zmlatex>154</zmlatex></p>",
+            "<p><zmlatex>156</zmlatex></p>",
+            "<p><zmlatex>158</zmlatex></p>",
+            "<p><zmlatex>160</zmlatex></p>"
+          ],
+          "analysis": "",
+          "subjectId": 11,
+          "gradeId": 4,
+          "termId": 1,
+          "typeId": 1,
+          "questionType": "单选题",
+          "provinceId": 3,
+          "cityId": 3,
+          "countyId": 3,
+          "year": 2017,
+          "score": 3,
+          "sourceId": 2,
+          "difficulty": 1,
+          "distinction": 1,
+          "rating": 1,
+          "comprehensiveDegreeId": 2,
+          "knowledgeIdList": [
+            115993,
+            115994
+          ],
+          "examPointIdList": [
+            15981,
+            16037,
+            16063
+          ],
+          "browseCount": 0,
+          "quoteCount": 175,
+          "examCount": 0,
+          "sub": false,
+          "createdTime": 1512990639000,
+          "createdUser": 1002318580,
+          "updatedTime": 1528096317000,
+          "updatedUser": 180,
+          "errType": 0,
+          "errReason": "",
+          "templateType": 2,
+          "knowledgeNameList": [
+            "简单的相遇问题",
+            "简单的追及问题"
+          ],
+          "layoutStyle": 3,
+          "parentTypeId": 38,
+          "parentTypeName": "选择题"
+        }
+      },
+      {
+        "id": 111231899,
+        "hlId": 666666994,
+        "questionId": "362237",
+        "score": 3,
+        "correctResult": 0,
+        "stuGetScore": 0,
+        "questionSource": 2,
+        "questionOutputDTO": {
+          "id": 362237,
+          "title": "<p>圆柱的体积刷题7，中等-经典题，多选题-选择题，这是题干有图，选项有图，解析有图的题，答案为abc<img src=\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20181213110247_3009.jpg\" zmtype=\"big\"/></p>",
+          "optionList": [
+            "<p>文字a<img src=\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20181213110309_8495.jpg\" zmtype=\"big\"/></p>",
+            "<p>文字b<img src=\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20181213110323_404.jpg\" zmtype=\"big\"/></p>",
+            "<p>文字c<img src=\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20181213110335_2298.jpg\" zmtype=\"big\"/></p>",
+            "<p>文字d<img src=\"https://oss-cn-beijing.aliyuncs.com/zm-tiku/qb_test/20181213110355_4483.jpg\" zmtype=\"big\"/></p>"
+          ],
+          "analysis": "",
+          "subjectId": 2,
+          "gradeId": 3,
+          "typeId": 2,
+          "questionType": "多选题",
+          "year": 2018,
+          "score": 3,
+          "sourceId": 19,
+          "difficulty": 3,
+          "distinction": 3,
+          "rating": 5,
+          "comprehensiveDegreeId": 3,
+          "abilityIdList": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            13,
+            12,
+            11,
+            10,
+            9,
+            8
+          ],
+          "knowledgeIdList": [
+            10468
+          ],
+          "examPointIdList": [],
+          "browseCount": 0,
+          "quoteCount": 85,
+          "examCount": 0,
+          "sub": false,
+          "createdTime": 1544670339000,
+          "createdUser": 180,
+          "updatedTime": 1544687102000,
+          "updatedUser": 180,
+          "errType": 0,
+          "templateType": 2,
+          "knowledgeNameList": [
+            "圆柱的体积"
+          ],
+          "layoutStyle": 3,
+          "label": "2018年",
+          "parentTypeId": 38,
+          "parentTypeName": "选择题"
+        }
+      },
+      {
+        "id": 111231900,
+        "hlId": 666666994,
+        "questionId": "361554",
+        "score": 6,
+        "correctResult": 0,
+        "stuGetScore": 0,
+        "questionSource": 2,
+        "questionOutputDTO": {
+          "id": 361554,
+          "title": "<p>qw<br/></p>",
+          "analysis": "",
+          "subjectId": 11,
+          "gradeId": 1,
+          "typeId": 36,
+          "questionType": "分类题",
+          "provinceId": 4,
+          "cityId": 4,
+          "countyId": 21,
+          "year": 2018,
+          "score": 0,
+          "sourceId": 2,
+          "difficulty": 1,
+          "distinction": 2,
+          "rating": 1,
+          "comprehensiveDegreeId": 1,
+          "knowledgeIdList": [
+            116152
+          ],
+          "examPointIdList": [],
+          "browseCount": 0,
+          "quoteCount": 5,
+          "examCount": 0,
+          "sub": true,
+          "createdTime": 1539952777000,
+          "createdUser": 1325976459,
+          "updatedTime": 1539952777000,
+          "updatedUser": 1325976459,
+          "errType": 0,
+          "templateType": 5,
+          "children": [
+            {
+              "id": 645647,
+              "questionId": 361554,
+              "title": "qw",
+              "answerList": [],
+              "typeId": 36,
+              "score": 0,
+              "subQuestionMemberList": [
+                {
+                  "id": 1631,
+                  "subQuestionId": 645647,
+                  "content": "qwe",
+                  "type": "text",
+                  "showOrder": 1
+                },
+                {
+                  "id": 1632,
+                  "subQuestionId": 645647,
+                  "content": "rrt",
+                  "type": "text",
+                  "showOrder": 0
+                }
+              ]
+            },
+            {
+              "id": 645648,
+              "questionId": 361554,
+              "title": "fg",
+              "answerList": [],
+              "typeId": 36,
+              "score": 0,
+              "subQuestionMemberList": [
+                {
+                  "id": 1633,
+                  "subQuestionId": 645648,
+                  "content": "dfg",
+                  "type": "text",
+                  "showOrder": 1
+                },
+                {
+                  "id": 1634,
+                  "subQuestionId": 645648,
+                  "content": "dfg",
+                  "type": "text",
+                  "showOrder": 0
+                }
+              ]
+            }
+          ],
+          "knowledgeNameList": [
+            "简单的比较"
+          ],
+          "layoutStyle": 3,
+          "label": "2018年上海省上海市黄浦区",
+          "parentTypeId": 41,
+          "parentTypeName": "判断匹配题"
+        }
+      },
+      {
+        "id": 111231901,
+        "hlId": 666666994,
+        "questionId": "362238",
+        "score": 3,
+        "correctResult": 0,
+        "stuGetScore": 0,
+        "questionSource": 2,
+        "questionOutputDTO": {
+          "id": 362238,
+          "title": "<p>圆柱的体积刷题8，困难-常规题，判断题-选择题，答案为b<br/></p>",
+          "optionList": [
+            "<p>√</p>",
+            "<p>×</p>"
+          ],
+          "analysis": "",
+          "subjectId": 2,
+          "gradeId": 3,
+          "typeId": 6,
+          "questionType": "判断题",
+          "year": 2018,
+          "score": 3,
+          "sourceId": 19,
+          "difficulty": 4,
+          "distinction": 2,
+          "rating": 2,
+          "comprehensiveDegreeId": 3,
+          "abilityIdList": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            13,
+            11,
+            9,
+            8
+          ],
+          "knowledgeIdList": [
+            10468
+          ],
+          "examPointIdList": [],
+          "browseCount": 0,
+          "quoteCount": 48,
+          "examCount": 0,
+          "sub": false,
+          "createdTime": 1544670807000,
+          "createdUser": 180,
+          "updatedTime": 1544687147000,
+          "updatedUser": 180,
+          "errType": 0,
+          "templateType": 2,
+          "knowledgeNameList": [
+            "圆柱的体积"
+          ],
+          "layoutStyle": 3,
+          "label": "2018年",
+          "parentTypeId": 41,
+          "parentTypeName": "判断匹配题"
+        }
+      }
+    ],
+    "csId": 18705,
+    "stuViewFlag": false,
+    "startAnswerTime": 1548052564000,
+    "stuFinishOnTime": 0,
+    "createdTime": 1548048570000,
+    "lessonType": 1,
+    "questionSource": 2,
+    "objectiveAmount": 6,
+    "objectiveRightAmount": 0,
+    "nonObjectiveAnsweredAmount": 0,
+    "correctMode": 0,
+    "clazzType": 1,
+    "smallClassHomework": false,
+    "1v1ClassHomework": true
+  }
+}

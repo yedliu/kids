@@ -1,0 +1,8 @@
+@import "../../../scss/mixins/mixins";
+@import "../../../scss/mixins/utils";
+
+@include b(editor-container) {
+  height: 100%;
+  background-color: #041B56;
+  overflow: hidden;
+}

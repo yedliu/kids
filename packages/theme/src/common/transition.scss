@@ -1,0 +1,37 @@
+@import "var";
+
+.pad-slide-enter-active {
+  animation: slide 0.5s;
+}
+.pad-slide-leave-active {
+  animation: slide 0.5s reverse;
+}
+//.pad-slide-enter,
+//.pad-slide-leave-to {
+//  transform: translateY(-100%);
+//}
+
+.pad-fade-enter-active {
+  animation: fade-in 0.5s;
+}
+.pad-fade-leave-active {
+  animation: fade-in 0.1s reverse;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

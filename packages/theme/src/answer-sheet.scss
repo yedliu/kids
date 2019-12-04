@@ -1,0 +1,95 @@
+@import "mixins/mixins";
+@import "mixins/utils";
+
+@include b(answer-sheet) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: $--index-top;
+  @include e(wrapper) {
+    position: fixed;
+    width: 426px;
+    height: 570px;
+    right: 0;
+    top: 0;
+    background: url(../assets/answer-sheet/bg.png) no-repeat 0 -92px;
+    background-size: 100% 671px;
+    z-index: $--index-normal;
+  }
+  @include e(container) {
+    @include flex();
+    flex-direction: column;
+    width: 346px;
+    padding: 0 30px;
+    margin: 32px auto 0;
+    height: 460px;
+  }
+  @include e(title) {
+    padding: 32px 0 20px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  @include e(text) {
+    font-size: 16px;
+    line-height: 44px;
+    height: 44px;
+    width: 100%;
+    background-color: rgba(105,136,255,0.13);
+    border-radius: 22px;
+    margin-bottom: 18px;
+    color: #000;
+  }
+  @include e(content) {
+    flex: 1;
+    width: 100%;
+    padding: 0;
+    overflow-y: scroll;
+    @include utils-scrollbar();
+    @include m(pc) {
+      @include utils-scrollbar();
+    }
+  }
+  @include e(button-submit) {
+    width: 200px;
+    margin-top: 40px;
+  }
+  @include e(item) {
+    float: left;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #F4F4F4;
+    color: #999;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    margin: 17px 26px 17px 0;
+    cursor: pointer;
+    &:nth-of-type(4n) {
+      margin-right: 20px;
+    }
+    @include m(pc) {
+      margin: 0 30px 30px 0;
+    }
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+    @include m(done) {
+      background: #6086FF;
+      color: $--color-white;
+    }
+    @include m(correct) {
+      color: #69B618;
+      background: #E7FFF2 url(../assets/answer-sheet/icon-correct@2x.png) no-repeat center bottom;
+      background-size: 60% auto;
+    }
+    @include m(incorrect) {
+      color: #EF4C4F;
+      background: #FFE7E7 url(../assets/answer-sheet/icon-incorrect@2x.png) no-repeat center bottom;
+      background-size: 60% auto;
+    }
+  }
+}

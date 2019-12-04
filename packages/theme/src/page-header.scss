@@ -1,0 +1,35 @@
+@import "mixins/mixins";
+@import "common/var";
+@import "mixins/utils";
+
+@include b(page-header) {
+  @include utils-flex(space-between, center);
+  line-height: 1;
+  padding: 20px 36px 15px;
+  min-height: 50px;
+
+  @include m(fixed) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: $--index-top;
+  }
+
+  @include e(left) {
+    min-width: 100px;
+    cursor: pointer;
+    text-align: left;
+    @include e(back) {
+      width: 50px;
+    }
+  }
+  @include e(title) {
+    @include utils-ellipsis(1);
+    font-size: 32px;
+    color: $--color-white;
+  }
+  @include e(right) {
+    min-width: 100px;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../mixins/mixins";
+
+@include b(homework) {
+  @include e(trigger-menu) {
+    position: fixed;
+    top: 20px;
+    right: 36px;
+    z-index: 1001;
+  }
+  @include e(confirm-exit-header) {
+    padding: 62px 0;
+  }
+  @include e(submit-confirm-answer-sheet-content) {
+    width: 100%;
+    height: 108px;
+    padding: 0 22px;
+    margin: 22px 0 40px;
+    .pad-answer-sheet__item {
+      margin: 0 13px 26px 13px;
+      &:nth-of-type(5n) {
+        margin-right: 0;
+      }
+    }
+  }
+}

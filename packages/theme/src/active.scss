@@ -1,0 +1,58 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
+img {
+  max-width: 100%;
+}
+@import "mixins/mixins";
+@import "mixins/utils";
+
+@include b(active) {
+  position: relative;
+  height: 100%;
+  background:linear-gradient(180deg,rgba(105,77,255,1) 0%,rgba(213,229,255,1) 100%);
+  text-align: center;
+  @include e(container) {
+    @include utils-flex(center, stretch);
+    height: 100%;
+    @include e(wrap) {
+      @include m(left) {
+        width: 35%;
+        background: red;
+        //padding-left: 42px;
+        //padding-right: 27px;
+      }
+      @include m(right) {
+        width: 65%;
+        background: yellow;
+      }
+    }
+    @include e(left-image-wrap) {
+      width: 76%;
+      max-width: 220px;
+      max-height: 120px;
+      min-height: 100px;
+      //height: calc(76% * 0.55);
+      border-radius: 18px;
+      background: yellowgreen;
+      margin: 0 calc(27 / 289 * 100%) 18px auto;
+      img {
+        width: 100%;
+      }
+      @include when(active) {
+        transform: scale(1.12);
+        border: 7px solid white;
+        //transform-origin: top left;
+      }
+    }
+  }
+  @include e(footer) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}

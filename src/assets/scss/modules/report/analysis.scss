@@ -1,0 +1,59 @@
+.answer-analysis {
+  width: 92%;
+  margin-left: 4%;
+  margin-top: 40px;
+  background: #F4F5F7;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 17px;
+  margin-bottom: 20px;
+
+  .title {
+    width: 63px;
+    text-align: center;
+    background: #FFCB3F;
+    border-radius: 6px;
+    line-height: 27px;
+    color: #fff;
+  }
+
+  p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: #000;
+    overflow: hidden;
+  }
+
+  .knowledge {
+    margin-left: -8px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  //.katex {
+  //  .base {
+  //    width: 100%;
+  //    display: flex;
+  //    flex-wrap: wrap;
+  //  }
+  //}
+
+  table {
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    caption {
+      text-align: center;
+      border: 1px solid;
+      border-bottom: 0;
+    }
+    td {
+      border-left: 1px solid;
+      border-top: 1px solid;
+      overflow: hidden;
+    }
+  }
+  img {
+    max-width: 760px;
+    user-select: none;
+  }
+}

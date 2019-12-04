@@ -1,0 +1,9 @@
+.svga-loading{
+  position: fixed;
+  top:50%;
+  left: 50%;
+  width: 320px;
+  height: 135px;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+}

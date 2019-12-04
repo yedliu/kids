@@ -1,0 +1,23 @@
+@import "mixins/mixins";
+
+@include b(icon) {
+  width: 30px;
+  height: 30px;
+  color: $--color-white;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  @include m(blue) {
+    background:rgba(86, 157, 255, 1);
+  }
+  @include m(red) {
+    background:rgba(255,101,104,1);
+  }
+  @include m(orange) {
+    background:rgba(255,127,80,1);
+  }
+  @include m(yellow) {
+    background:rgba(255,198,50,1);
+  }
+}

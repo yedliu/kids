@@ -1,0 +1,112 @@
+.homework-ttMatch-select {
+  .title-img {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  .question {
+    margin: 0 30px 30px 30px;
+    position: relative;
+    .main-box {
+      z-index: 2;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .part {
+        width: 42%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        .item-box {
+          margin: 8px 0;
+          padding: 18px 25px;
+          text-align: center;
+          width: 100%;
+          border: 4px #84ACFF solid;
+          border-radius: 7px;
+          font-size: 20px;
+          position: relative;
+          color: #617686;
+          word-break: break-all;
+          @include disableUserSelect();
+          &:after {
+            content: "";
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #FFE174;
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+          }
+        }
+        .item-box.selected {
+          border: 4px #FFE174 solid;
+          @include disableUserSelect();
+        }
+      }
+      .part.left {
+        .item-box:after {
+          right: -15px;
+        }
+      }
+      .part.right {
+        .item-box:after {
+          left: -15px;
+        }
+      }
+    }
+    .line-box {
+      position: absolute;
+      width: 100%;
+      min-height: 100%;
+      top: 0;
+      left: 0;
+      .line {
+        stroke: #FFE174;
+        stroke-width: 5;
+      }
+      .line.right {
+        stroke: #7EC92F;
+      }
+      .line.wrong {
+        stroke: #FF6969;
+      }
+    }
+  }
+}
+.homework-ttMatch-select.test {
+  display: flex;
+  flex-direction: column;
+}
+.homework-ttMatch-select.report {
+  overflow-y: auto;
+  .question {
+    .main-box {
+      position: relative;
+      .part {
+        .item-box.wrong {
+          border: 4px #FF6969 solid;
+          &:after {
+            background-image: url("../images/homework/report/icon_report_wrong_middle@2x.png");
+            background-position: center;
+            background-size: contain;
+          }
+        }
+        .item-box.right {
+          border: 4px #7EC92F solid;
+          &:after {
+            background-image: url("../images/homework/report/icon_report_right_middle@2x.png");
+            background-position: center;
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
+}

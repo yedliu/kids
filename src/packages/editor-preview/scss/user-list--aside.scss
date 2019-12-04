@@ -1,0 +1,117 @@
+@import "../../../scss/common/reset.scss";
+@import "../../../scss/mixins/mixins.scss";
+@import "../../../scss/mixins/utils.scss";
+@include b(editor-user) {
+  @include m(aside) {
+    width: 20vw;
+    height: 100vh;
+    float: left;
+    overflow-y: scroll;
+    @include e(wrapper) {
+      @include when(teacher) {
+        height: 15vw;
+        margin-bottom: 2px;
+        .pad-editor-user__content {
+          display: block !important;
+          &>img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      @include when(mine) {
+        height: 15vw !important;
+        @include e(content) {
+          position: relative;
+        }
+        .pad-editor-user__content {
+          display: block !important;
+        }
+        .pad-editor-user__avatar-wrapper {
+          @include utils-flex(center, center);
+          height: 100%;
+          background: rgba(48, 80, 180, 1);
+          img {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+          }
+        }
+        .pad-editor-user__info {
+          @include utils-flex(space-between, center);
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 26px;
+          background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%);
+          p {
+            @include utils-flex($align: center);
+            padding: 0 4px;
+          }
+        }
+      }
+      @include when(student) {
+        //width: 166px;
+        height: 6.6vw;
+        margin-bottom: 2px;
+        .pad-editor-user__content {
+          @include utils-flex();
+        }
+        .pad-editor-user__avatar-wrapper {
+          @include utils-flex($align: center);
+          flex: 1;
+          order: 2;
+          height: 100%;
+          background: rgba(48, 80, 180, 1);
+          padding: 9px 6px;
+          img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            margin-right: 6px;
+          }
+        }
+        .pad-editor-user__info {
+          @include utils-flex(center, center);
+          order: 1;
+          width: 48px;
+          height: 100%;
+          background: rgba(82, 119, 235, 1);
+        }
+      }
+
+    }
+    @include e(content) {
+      width: 100%;
+      height: 100%;
+      font-size: 12px;
+      color: white;
+      //@include e(avatar-wrapper) {
+      //  height: 130px;
+      //  background: rgba(48, 80, 180, 1);
+      //  img {
+      //    width: 28px;
+      //    height: 28px;
+      //    border-radius: 50%;
+      //    background: rgba(255,255,255,0.5);
+      //  }
+      //}
+      //@include e(info) {
+      //  @include utils-flex(space-between, center);
+      //  height: 100%;
+      //  background:rgba(82,119,235,1);
+      //  color: white;
+      //  p {
+      //    @include utils-flex($align: center);
+      //    padding: 0 4px;
+      //  }
+      //}
+    }
+    @media screen and ($--ipad) {   // 设备宽高比大于6/4
+      display: none;
+    }
+  }
+}

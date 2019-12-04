@@ -1,0 +1,18 @@
+@import "./base.scss";
+@import "./page-header.scss";
+@import "./button.scss";
+@import "./answer-sheet.scss";
+@import './select-with-jude.scss';
+@import "./confirm.scss";
+@import "./list-staged.scss";
+@import "./evaluation-report-board--staged.scss";
+@import "./icon.scss";
+@import "views/homework";
+@import "./report/index.scss";
+@import "views/evaluation-detail--staged.scss";
+@import "views/evaluation-report--staged.scss";
+@import "views/evaluation--staged.scss";
+@import "./font.scss";
+body {
+  font-family: HYZhengYuan, sans-serif, PingFangSC-Regular;
+}
